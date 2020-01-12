@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' show get;
 import 'models/ImageModel.dart';
+import 'widget/ImageList.dart';
 
 class App extends StatefulWidget{
 
@@ -28,7 +29,7 @@ class AppState extends State<App>{
   Widget build(context){
       return MaterialApp(
         home: Scaffold(
-        body: Text('$counter'),
+        body: ImageList(images),
         appBar: AppBar(
           title: Text('Hi mani the great'),
         ),
